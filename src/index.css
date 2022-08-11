@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  background-color: "#F9F9F9";
+  /* BA92A6 */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .Graphic_Side {
+  position: absolute;
+  overflow: hidden;
+  z-index: -10;
+  width: 100vw;
+  height: 200px;
+
+  background: radial-gradient(
+    36.28% 150.93% at 50% 50%,
+    #3b8aff 0%,
+    #0048b3 100%
+  );
+  border-radius: 0px 0px 16px 16px;
 }
+.Ellipse5 {
+  position: relative;
+  width: 2112.61px;
+  height: 2156px;
+  top: -460px;
+  left: -100px;
+
+  z-index: 2;
+  border-radius: 9999px;
+  background: #ffffff;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+
+  box-shadow: inset 24px 32px 184px 24px rgba(6, 8, 89, 0.75);
+  transform: rotate(90deg);
+}
+.Ellipes4 {
+  position: relative;
+  width: 1635.38px;
+  height: 1670.33px;
+  left: 470px;
+  top: 640px;
+
+  z-index: 0;
+  border-radius: 9999px;
+  background: #ffffff;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+
+  box-shadow: inset 24px 32px 184px 24px rgba(6, 8, 89, 0.75);
+  transform: rotate(90deg);
+}
+
+.Ellipse3 {
+  position: relative;
+
+  width: 1389.53px;
+  height: 1418.45px;
+  left: -0px;
+  z-index: 4;
+  border-radius: 9999px;
+  background: #ffffff;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+
+  box-shadow: inset 24px 32px 184px 24px rgba(6, 8, 89, 0.75);
+  transform: rotate(90deg);
+} */
