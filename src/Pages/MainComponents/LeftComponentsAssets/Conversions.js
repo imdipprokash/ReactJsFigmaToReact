@@ -1,12 +1,12 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import EarningsGauge from "./EarningsGauge";
+import ColumnCharts from "./ColumnCharts";
 
-const Earnings = () => {
+const Conversions = () => {
   return (
     <>
       <div className="flex justify-between px-8 py-6">
-        <h1 className=" text-[25px] "> Earnings</h1>
+        <h1 className=" text-[25px] "> Conversions</h1>
 
         <div className=" flex items-center  space-x-3">
           <h1 className=" text-xl text-gray-500">This Week </h1>
@@ -16,18 +16,11 @@ const Earnings = () => {
       <div className=" flex px-8">
         <div>
           {/* Apex Chart */}
-          <EarningsGauge />
+          <ColumnCharts />
         </div>
       </div>
     </>
   );
 };
 
-export default Earnings;
-
-// const text=()=>{
-//   font-family: 'Inter';
-// font-style: normal;
-// font-weight: 500;
-// font-size: 19px;
-// }
+export default Conversions;
