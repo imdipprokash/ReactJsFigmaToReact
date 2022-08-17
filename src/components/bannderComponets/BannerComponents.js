@@ -4,7 +4,7 @@ import mic from "../../assets/Voice2.svg";
 function BannerComponents() {
   return (
     <>
-      <div className=" relative">
+      <div className=" relative ">
         <img
           src={bannerImg}
           className=" h-40 w-full object-cover rounded-b-lg"

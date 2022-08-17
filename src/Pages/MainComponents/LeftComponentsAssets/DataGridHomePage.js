@@ -6,10 +6,73 @@ import {
   ColumnsDirective,
   GridComponent,
 } from "@syncfusion/ej2-react-grids";
-import { data } from "./datasource";
+import { data } from "../../../assets/data/datasource";
 import { FiChevronDown } from "react-icons/fi";
-
+import { ProgressBarComponent } from "@syncfusion/ej2-react-progressbar";
 function DataGridHomePage() {
+  const cusHeader = () => {
+    return <div className=" ">OrderID</div>;
+  };
+
+  const cusImage = (props) => {
+    const src = props.img;
+
+    return (
+      <div className=" flex space-x-4  items-center">
+        <div className=" bg-[#C4CCF8] rounded-md h-[45px] w-[45px] flex justify-center items-center">
+          <img src={src} alt="image" width={45} height={45} />
+        </div>
+        <h1 className=" text-[20px] text-[#232D42]">{props.Companies}</h1>
+      </div>
+    );
+  };
+  const conTemplate = (props) => {
+    var data = props.Contacts;
+    return (
+      // broder-[#3A57E8]
+      <div className=" flex pl-4">
+        {data.map((item, index) => (
+          <div
+            className={`rounded-full w-10 h-10  items-center bg-white flex justify-center -ml-2`}
+            style={{ border: "1px solid #3A57E8" }}
+          >
+            <h1 className=" text-[#3A57E8]">{item}</h1>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const cusCompletion = (props) => {
+    var colorCode = props.Completion === 100 ? "#1AA053" : "#3A57E8";
+
+    return (
+      <>
+        <div className="">
+          <h1>{props.Completion}%</h1>
+          <div className=" relative -left-2">
+            <ProgressBarComponent
+              id={props.Companies}
+              type="Linear"
+              progressColor={colorCode} //"#E3165B"||
+              trackColor="#E9ECEF" //E9ECEF
+              // showProgressValue={true}
+              // labelStyle={{ color: "#FFFFFF" }}
+              trackThickness={10}
+              progressThickness={10}
+              value={props.Completion}
+              animation={{
+                enable: true,
+                duration: 2000,
+                delay: 0,
+              }}
+              cornerRadius={"Round"}
+            ></ProgressBarComponent>
+          </div>
+        </div>
+      </>
+    );
+  };
   return (
     <>
       <div className=" flex flex-col overflow-hidden">
@@ -26,12 +89,25 @@ function DataGridHomePage() {
 
         {/* Data Grid  */}
 
-        <div className="max-w-[69rem] flex justify-center">
-          <GridComponent dataSource={data}>
+        <div className="xl:max-w-[70rem] 2xl:max-w-[70rem] flex justify-center ">
+          <GridComponent dataSource={data} height="20.3rem">
             <ColumnsDirective>
-              <ColumnDirective field="OrderID" />
-              <ColumnDirective field="CustomerID" />
-              <ColumnDirective field="EmployeeID" />
+              <ColumnDirective
+                field="Companies"
+                template={cusImage.bind(this)}
+                textAlign={"Left"}
+                width={300}
+              />
+
+              <ColumnDirective
+                field="Contacts"
+                template={conTemplate.bind(this)}
+              />
+              <ColumnDirective field="Order" />
+              <ColumnDirective
+                field="Completion"
+                template={cusCompletion.bind(this)}
+              />
             </ColumnsDirective>
           </GridComponent>
         </div>

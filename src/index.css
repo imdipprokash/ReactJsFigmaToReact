@@ -6,6 +6,7 @@
 * {
   background-color: "#F9F9F9";
   /* BA92A6 */
+  /* overflow-x: hidden; */
 }
 
 /* .Graphic_Side {
@@ -70,3 +71,95 @@
   box-shadow: inset 24px 32px 184px 24px rgba(6, 8, 89, 0.75);
   transform: rotate(90deg);
 } */
+
+.e-grid .e-headercell {
+  height: 44px;
+  padding: 0px 0px 0px 0px;
+  /* background: #000; */
+}
+.e-grid .e-headercelldiv {
+  font-size: 16px;
+  color: #8a92a6;
+}
+
+.e-grid .e-rowcell {
+  font-size: 16px;
+}
+
+.blueCircle {
+  position: relative;
+  width: 385px;
+  height: 385px;
+  left: -181px;
+  top: -120px;
+
+  border-radius: 9999px;
+
+  background: radial-gradient(
+      77.62% 77.62% at 0% -2.56%,
+      #08328c 0%,
+      #1964d3 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.greenCircle {
+  position: relative;
+  width: 373px;
+  height: 373px;
+  left: 160px;
+  top: -300px;
+  border-radius: 9999px;
+
+  background: radial-gradient(
+      90.92% 90.92% at 102.52% 107.77%,
+      #24777d 0%,
+      #9ae5eb 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.CardDtls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 10px;
+  width: 22rem;
+
+  position: relative;
+  left: 4%;
+  top: -220%;
+  /* bottom: 36.64%; */
+
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid #ffffff;
+  backdrop-filter: blur(64px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 24px;
+}
+
+.whiteCircle {
+  position: relative;
+  width: 71px;
+  height: 71px;
+
+  left: 60px;
+  border-radius: 9999px;
+
+  background: #ffffff;
+  opacity: 0.25;
+}
+.whiteCircle1 {
+  position: relative;
+  width: 71px;
+  height: 71px;
+  /* left: 180px;
+  top: -80px; */
+  left: 30px;
+  border-radius: 9999px;
+
+  background: #ffffff;
+  opacity: 0.25;
+}

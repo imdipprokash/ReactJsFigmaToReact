@@ -5,7 +5,7 @@ import MainPage from "./Pages/MainPage";
 function App() {
   return (
     <>
-      <div className="flex overflow-hidden">
+      <div className="flex ">
         <Sidebar />
 
         <MainPage  />

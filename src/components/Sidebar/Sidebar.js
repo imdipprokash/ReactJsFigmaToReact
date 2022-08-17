@@ -86,7 +86,7 @@ const Sidebar = () => {
   const map = "/static/media/Location.65061e5d5e64f436e611c20ba35d91f2.svg";
   return (
     <>
-      <div className=" flex-none">
+      <div className=" flex-none overflow-hidden">
         {/* Main Logo */}
         <div className="flex items-center space-x-2 px-10 py-3 ">
           <img src={logo} alt="logo " />
@@ -218,24 +218,24 @@ const Sidebar = () => {
         <div className=" border-b-2 border-gray-200 -pt-4" />
 
         {/* design */}
-        <div className=" pt-10">
+        <div className=" pt-10 -mb-[30rem]">
           <div
-            className="absolute   w-16 h-80 bg-[#0048B2] rotate-45 opacity-5 -left-20"
+            className="absolute   w-16 h-80 bg-[#0048B2] rotate-45 opacity-5 -left-20 "
             style={{ borderRadius: "75px" }}
           />
-          <div className="pt-10">
+          <div className="pt-10  ">
             <div
-              className=" relative w-16 h-96 bg-[#0048B2] left-8  opacity-5 -rotate-45 "
+              className=" relative w-16 h-96 bg-[#0048B2] left-8  opacity-5 -rotate-45  "
               style={{ borderRadius: "75px" }}
             />
             <div
-              className=" relative -top-[268px] left-8 w-16 h-96 bg-[#0048B2]  opacity-5 rotate-45 "
+              className=" relative -top-[268px] left-8 w-16 h-96 bg-[#0048B2]  opacity-5 rotate-45  "
               style={{ borderRadius: "75px" }}
             />
           </div>
 
           <div
-            className="relative -top-[550px] w-16 h-80 bg-[#0048B2] -rotate-45 opacity-5 -left-20"
+            className="relative -top-[550px] w-16 h-80 bg-[#0048B2] -rotate-45 opacity-5 -left-20 "
             style={{ borderRadius: "75px" }}
           />
         </div>

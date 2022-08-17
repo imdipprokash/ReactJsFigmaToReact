@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 const DataViewCard = () => {
   return (
     <>
-      <div className="sm:grid sm:grid-cols-4 sm:gap-4 2xl:flex justify-between relative px-8 -top-10">
+      <div className="sm:grid sm:grid-cols-4 2xl:flex justify-between relative  px-8 -top-10">
         <div className=" bg-white shadow-sm w-56 h-24 rounded-lg  top-48 left-64 items-center justify-center flex ">
           {/* circle */}
           <div className="circular-progress">

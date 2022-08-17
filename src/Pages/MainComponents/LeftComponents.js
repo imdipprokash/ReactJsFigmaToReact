@@ -24,7 +24,7 @@ const LeftComponents = () => {
           <Conversions />
         </div>
       </div>
-      <div className="flex w-full h-96 bg-white rounded-md">
+      <div className="flex w-full h-[28rem] bg-white rounded-md">
         {/* Enterprices Clients */}
 
         <DataGridHomePage />

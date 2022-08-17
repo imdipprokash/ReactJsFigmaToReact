@@ -1845,6 +1845,15 @@
     "@syncfusion/ej2-base" "~20.2.43"
     "@syncfusion/ej2-buttons" "~20.2.43"
 
+"@syncfusion/ej2-progressbar@20.2.43":
+  "integrity" "sha512-9ZfO42TB9OwC8NPnKvDsELo2GhdsnN3Iw9OTnMMyfX158j6s7ir/KnDbcb/ayFJun50UfI+JDJwRTwAyZ9UTAg=="
+  "resolved" "https://registry.npmjs.org/@syncfusion/ej2-progressbar/-/ej2-progressbar-20.2.43.tgz"
+  "version" "20.2.43"
+  dependencies:
+    "@syncfusion/ej2-base" "~20.2.43"
+    "@syncfusion/ej2-data" "~20.2.43"
+    "@syncfusion/ej2-svg-base" "~20.2.43"
+
 "@syncfusion/ej2-react-base@~20.2.43":
   "integrity" "sha512-JXs9130iURbq//+ggNLZKF3s0/dJRFufqAmd7+pGgfz53OqLsu+rvKxfNL6wO0qw7AB41Dz2SZ1r0hMa7g7vJg=="
   "resolved" "https://registry.npmjs.org/@syncfusion/ej2-react-base/-/ej2-react-base-20.2.43.tgz"
@@ -1861,6 +1870,15 @@
     "@syncfusion/ej2-grids" "20.2.43"
     "@syncfusion/ej2-react-base" "~20.2.43"
 
+"@syncfusion/ej2-react-progressbar@^20.2.43":
+  "integrity" "sha512-u2RZe44421+aLvE2m4XSbyFDOB5tRb4hbZ0r5U4jcDYvTgeZKJ8jxc9m9te4q2N2oYqDaI7kUFLqONDu7muzTg=="
+  "resolved" "https://registry.npmjs.org/@syncfusion/ej2-react-progressbar/-/ej2-react-progressbar-20.2.43.tgz"
+  "version" "20.2.43"
+  dependencies:
+    "@syncfusion/ej2-base" "~20.2.43"
+    "@syncfusion/ej2-progressbar" "20.2.43"
+    "@syncfusion/ej2-react-base" "~20.2.43"
+
 "@syncfusion/ej2-splitbuttons@~20.2.43":
   "integrity" "sha512-/U0pfSeQfAoxwxx1aMqcfr/ubELAYCvFiNK75s0cY1Uty2cU6/oeH+0zpZjmbmaVEhWAdopjWGlBevqf9wiVxg=="
   "resolved" "https://registry.npmjs.org/@syncfusion/ej2-splitbuttons/-/ej2-splitbuttons-20.2.43.tgz"
@@ -1868,6 +1886,13 @@
   dependencies:
     "@syncfusion/ej2-base" "~20.2.43"
     "@syncfusion/ej2-popups" "~20.2.43"
+
+"@syncfusion/ej2-svg-base@~20.2.43":
+  "integrity" "sha512-jNyGlWLaFfisi362uXqqQLd4U7Aj+2FEe1D96953olVMYSQ5f8PQepuuLPV3Cbmx4KlmwpxnUWdrzTNU7WjmbQ=="
+  "resolved" "https://registry.npmjs.org/@syncfusion/ej2-svg-base/-/ej2-svg-base-20.2.43.tgz"
+  "version" "20.2.43"
+  dependencies:
+    "@syncfusion/ej2-base" "~20.2.43"
 
 "@testing-library/dom@^8.5.0", "@testing-library/dom@>=7.21.4":
   "integrity" "sha512-XEV2mBxgv6DKjL3+U3WEUzBgT2CjYksoXGlLrrJXYP8OvRfGkBonvelkorazpFlp8tkEecO06r43vN4DIEyegQ=="
