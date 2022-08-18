@@ -76,7 +76,7 @@ const SplineArea = () => {
   ]);
 
   return (
-    <div className="2xl:w-[69rem] ">
+    <div className="2xl:w-[74rem] ">
       <Chart options={option} series={series} type="area" height={400} />
     </div>
   );

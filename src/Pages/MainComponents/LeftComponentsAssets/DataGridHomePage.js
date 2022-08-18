@@ -9,6 +9,7 @@ import {
 import { data } from "../../../assets/data/datasource";
 import { FiChevronDown } from "react-icons/fi";
 import { ProgressBarComponent } from "@syncfusion/ej2-react-progressbar";
+import { getValue } from "@syncfusion/ej2-base";
 function DataGridHomePage() {
   const cusHeader = () => {
     return <div className=" ">OrderID</div>;
@@ -73,6 +74,32 @@ function DataGridHomePage() {
       </>
     );
   };
+
+  const roWDataBoundHandler = (args) => {
+    var value = args.data.Order;
+    // if (value) {
+    //   if (value < 14000) {
+    //     //Green
+    //     args.row.classList.add("red");
+    //   }
+    //   if (value > 14000) {
+    //     // args.row.classList.add("below-80");
+    //     args.row.classList.add("green");
+    //   }
+    // }
+  };
+
+  const orderCustom = (props) => {
+    var data = props.Order;
+    var value = data.toLocaleString(undefined, { maximumFractionDigits: 2 });
+
+    return (
+      <>
+        <div>${value}</div>
+      </>
+    );
+  };
+
   return (
     <>
       <div className=" flex flex-col overflow-hidden">
@@ -89,25 +116,24 @@ function DataGridHomePage() {
 
         {/* Data Grid  */}
 
-        <div className="xl:max-w-[70rem] 2xl:max-w-[70rem] flex justify-center ">
-          <GridComponent dataSource={data} height="20.3rem">
+        <div className="xl:max-w-[70rem] 2xl:max-w-[74.8rem] flex justify-center ">
+          <GridComponent
+            dataSource={data}
+            height="20.3rem"
+            rowDataBound={roWDataBoundHandler}
+            // allowRowDragAndDrop={true}
+          >
             <ColumnsDirective>
               <ColumnDirective
                 field="Companies"
-                template={cusImage.bind(this)}
+                template={cusImage}
                 textAlign={"Left"}
                 width={300}
               />
 
-              <ColumnDirective
-                field="Contacts"
-                template={conTemplate.bind(this)}
-              />
-              <ColumnDirective field="Order" />
-              <ColumnDirective
-                field="Completion"
-                template={cusCompletion.bind(this)}
-              />
+              <ColumnDirective field="Contacts" template={conTemplate} />
+              <ColumnDirective field="Order" template={orderCustom} />
+              <ColumnDirective field="Completion" template={cusCompletion} />
             </ColumnsDirective>
           </GridComponent>
         </div>

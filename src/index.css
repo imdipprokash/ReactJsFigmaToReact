@@ -163,3 +163,16 @@
   background: #ffffff;
   opacity: 0.25;
 }
+/* .e-grid .e-rowcell {
+  background: red;
+}
+ */
+.red {
+  background: #f87171;
+}
+.green {
+  background-color: #86efac;
+}
+.e-row:hover {
+  animation: none;
+}
